@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <html lang="pt-BR">
+        
+    
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title> desky </title>
+            <link rel="stylesheet" href="projeto.css">
+        </head>
+        
+        
+        <body>
+    
+<!-- Login -->
+            <div class="screen" id="loginScreen">
+                <h1>Login</h1>
+                    <form id="loginForm">
+                        <input type="email" id="loginEmail" placeholder="Email" required>
+                        <input type="password" id="loginPassword" placeholder="Senha" required>
+                        <button type="submit">Entrar</button>
+                    </form>
+<!-- Cadastro de Novo Usuário-->
+                    <br></br>
+                     <button id="newUserButton"> Novo usuário? Cadastre-se! </button>
+            </div>
+
+<!-- Registro -->
+            <div class="screen" id="registerScreen" style="display: none;">
+                <h1>Registro</h1>
+                    <form id="registerForm">
+                        <input type="text" id="registerName" placeholder="Nome Completo" required>
+                        <input type="email" id="registerEmail" placeholder="Email" required>
+                        <input type="password" id="registerPassword" placeholder="Senha" required>
+                        <button type="submit"> Registrar </button>
+                    </form>
+                        <button id="backToLogin">Voltar</button>
+            </div>
+
+            <script src="projeto.js"></script>
+        </body>
+</html>
