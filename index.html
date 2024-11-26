@@ -1,40 +1,35 @@
 <!DOCTYPE html>
-    <html lang="pt-BR">
-        
-    
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title> desky </title>
-            <link rel="stylesheet" href="projeto.css">
-        </head>
-        
-        <body>
-<!-- Login -->
-            <div class="screen" id="loginScreen">
-                <h1>Login</h1>
-                    <form id="loginForm">
-                        <input type="email" id="loginEmail" placeholder="Email" required>
-                        <input type="password" id="loginPassword" placeholder="Senha" required>
-                        <button type="submit">Entrar</button>
-                    </form>
-        <!-- Cadastro de Novo Usuário-->
-                    <br></br>
-                     <button id="newUserButton"> Novo usuário? Cadastre-se! </button>
-            </div>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Tarefas </title>
+        <link rel="stylesheet" href="ttt.css">
 
-        <!-- Registro -->
-            <div class="screen" id="registerScreen" style="display: none;">
-                <h1>Registro</h1>
-                    <form id="registerForm">
-                        <input type="text" id="registerName" placeholder="Nome Completo" required>
-                        <input type="email" id="registerEmail" placeholder="Email" required>
-                        <input type="password" id="registerPassword" placeholder="Senha" required>
-                        <button type="submit"> Registrar </button>
-                    </form>
-                        <button id="backToLogin">Voltar</button>
-            </div>
+    <div class="image-container">
+        <img src="imagens/TASKYlogo.png"
+    </div>
 
-            <script src="projeto.js"></script>
-        </body>
+    </head>
+    <body>
+
+        <!-- Botões aqui -->
+        <div class="button-group">
+            <button id="showAll"> TAREFAS </button>
+            <button id="showAdd"> ADICIONAR </button>
+            <button id="showPending"> PENDENTES </button>
+            <button id="showCompleted"> CONCLUÍDAS </button>
+            <button id="showDeleted"> EDITAR </button>
+        </div>
+
+        <!-- LetterBox-->
+        <div class="letterbox">
+            <h1> Digite aqui: </h1>
+        </div>
+        <div class="letterbox-body">
+            <input type="text" placeholder="Digite sua tarefa aqui">
+            <button> Enviar </button>
+        </div>
+</body>
 </html>
+
