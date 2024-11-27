@@ -26,7 +26,6 @@ body {
 }
 
 .button-group button {
-    margin-bottom: 100px;
     margin-right: 10px;
     padding: 10px 20px;
     background-color: #01070e;
@@ -37,7 +36,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
 }
 
 .letterbox-body {
