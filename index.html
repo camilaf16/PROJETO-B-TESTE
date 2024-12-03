@@ -3,36 +3,39 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Tarefas </title>
+        <title>Tarefas</title>
         <link rel="stylesheet" href="projeto.css">
 
-    <div class="image-container">
-        <img src="imagens/TASKYlogo.png">
-    </div>
+        <div class="image-container">
+            <img src="imagens/TASKYlogo.png">
+        </div>
 
     </head>
     <body>
-
         <!-- Botões aqui -->
         <div class="button-group">
-            <button id="showAll"> TAREFAS </button>
-            <button id="showAdd"> ADICIONAR </button>
-            <button id="showPending"> PENDENTES </button>
-            <button id="showCompleted"> CONCLUÍDAS </button>
-            <button id="showDeleted"> EDITAR </button>
+            <button id="showAll" onclick="tarefas()"> TAREFAS </button>
+            <button id="showAdd" onclick="adicionar()"> ADICIONAR </button>
+            <button id="showPending" onclick="pendentes()"> PENDENTES </button>
+            <button id="showCompleted" onclick="concluidas()"> CONCLUÍDAS </button>
+            <button id="showDeleted" onclick="editar()"> EDITAR </button>
+        </div>
+        <div id="txtinput">
+            
         </div>
         <!-- LetterBox-->
         <div class="letterbox">
-            <h1> Digite aqui: </h1>
-            <input type="text" placeholder="Digite sua tarefa aqui">
-            <button> Enviar </button>
+            <input type="text" name="entrada" id="txtn" placeholder="Digite sua tarefa aqui"> <input type="button" value="Enviar" onclick="adicionar()">
         </div>
         <br></br>
         <div>
-            <select name="tasks" id="tab" size="30">
+            <select name="tasks" id="tab" size="15">
                 <option>Sem tarefas registradas</option>
             </select>
         </div>
+        <footer>
+            <p>by: Camila e Gustavo</p>
+        </footer>
+        <script src="script.js"></script>
 </body>
 </html>
-
